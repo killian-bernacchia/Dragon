@@ -34,7 +34,7 @@ A lot of C
 Some python
 Some TI-Basic (that was a hard one)
 Some Bash
-And even Minecraft (with the mod 'scarpet', not with command blocks) 
+And even Minecraft (with the mod 'scarpet', not (yet?) with command blocks) 
 
 I should also explain some of the logic behind these production.
 Mainly the logic to turn it from a recursive form to a iterative form and then the binary optimisation.
