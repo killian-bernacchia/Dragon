@@ -68,4 +68,14 @@ dragon(int n){
         else {...}
     }
 }
+
+//iterative fuckingly optimised
+dragon(int n){
+    n = 1<<n;
+    for(int i = 1; i <= n; i++){
+        if( -i & i & (i>>1) ){...}
+        else {...}
+    }
+}
+
 ```
