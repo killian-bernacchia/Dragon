@@ -1,12 +1,12 @@
 # Dragon
 
-during my second year of study, I had to learn the recursive algorithm.
+During my second year of study, I had to learn the recursive algorithm.
 To do this we made fractals, and one of them was the 'dragon curve'.
 It was really challenging since teachers let us find by our self at first.
 And I love challenges.
 
 So I put my self to it, and then the magic of math and programming added to the equation.
-So MANY ways to abstract the fractal, and many more to program it without take all variations into account.
+So MANY ways to abstract the fractal, and many more to program it without taking all variations into account.
 Then a passion was born.
 
 Later in the year because of 2 years of pandemic I was close to give up my studies.
@@ -47,6 +47,7 @@ dragon(int n, ...){
         dragon(n-1, ...);
     }
 }
+
 //iterative
 dragon(int n){
     n = 1<<n; //n = pow(2,n);
