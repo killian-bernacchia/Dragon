@@ -1,44 +1,18 @@
 # Dragon
 
-During my second year of study, I had to learn the recursive algorithm.
-To do this we made fractals, and one of them was the 'dragon curve'.
-It was really challenging since teachers let us find by our self at first.
-And I love challenges.
+For some reason, I was too invested in the Dragon's Curve fractal. 
 
-So I put my self to it, and then the magic of math and programming added to the equation.
-So MANY ways to abstract the fractal, and many more to program it without taking all variations into account.
-Then a passion was born.
+At the beginning it was a school exercise, but it went a bit too far... And it would be a shame not to let it be seen anywhere.
 
-Later in the year because of 2 years of pandemic I was close to give up my studies.
-I had a lot of lessons to make up.
-I had to find the motivation to make it all up.
-So, I took the 'dragon curve', and decided to program it in all the languages I needed to learn.
-Need to learn PHP ? Let's make a PHP dragon curve.
-Need to learn C ? Let's make a C dragon curve.
-And so on...
+It wents from a recurcive algorithm to a nicely optimised algorithm, that it even becomes rediculous how a so little algorithm can draw something so big and complex
+```python
+while i < 2**N:
+  turtle.left( 90 if( -i & i & i>>1 == 0) else -90)
+  turtle.forward(1)
+  i=i+1
+```
 
-Then my class started challenging me on other languages in a humorous tone.
-But, remember ? I LOVE challenges.
-So I made my mind. I have to code it in all langages I could encounter.
-
-So that's where we are.
-I hadn't done it in so many langages since I had to study, 
-but it's already something. And I'm still working on it.
-
-So in this repo I will post what I have done since my studies.
-
-There will be :
-A lot of java
-Some PHP
-A lot of C
-Some python
-Some TI-Basic (that was a hard one)
-Some Bash
-And even Minecraft (with the mod 'scarpet', not (yet?) with command blocks) 
-
-I should also explain some of the logic behind these production.
-Mainly the logic to turn it from a recursive form to a iterative form and then the binary optimisation.
-
+But before ending up with this version it was a long journey
 ```c
 //recursive
 dragon(int n, ...){
@@ -70,7 +44,7 @@ dragon(int n){
     }
 }
 
-//iterative fuckingly optimised
+//iterative x binary nicely optimised
 dragon(int n){
     n = 1<<n;
     for(int i = 1; i <= n; i++){
