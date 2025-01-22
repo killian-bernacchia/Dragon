@@ -1,4 +1,4 @@
-# Dragon
+# Dragon's Curve
 
 For some reason, I was too invested in the Dragon's Curve fractal. 
 
