@@ -6,15 +6,17 @@ At the beginning it was a school exercise, but it went a bit too far... And it w
 
 It wents from a recurcive algorithm to a nicely optimised algorithm, that it even becomes rediculous how a so little algorithm can draw something so big and complex
 ```python
-while i < 2**N:
-  turtle.left( 90 if( -i & i & i>>1 == 0) else -90)
-  turtle.forward(1)
-  i=i+1
+for i in range(2**N):
+  if( -i & i & i>>1 == 0):
+    left(90)
+  else:
+    right(90)
+  forward(1)
 ```
 
 But before ending up with this version it was a long journey
 ```c
-//recursive
+//recursive (the exercice)
 dragon(int n, ...){
     if(n>0){
         dragon(n-1, ...);
